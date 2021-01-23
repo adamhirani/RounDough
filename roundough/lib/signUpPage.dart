@@ -23,9 +23,14 @@ class _SignUpPageState extends State<SignUpPage> {
 
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
+    return new 
+    Stack(children: <Widget>[
+      Container(
+        child: LoginBackgroundWidget(),
+      ),
+      Scaffold(
         resizeToAvoidBottomPadding: false,
-        backgroundColor: UIColors.primaryColor,
+        backgroundColor: Colors.transparent,
         body: Column(crossAxisAlignment: CrossAxisAlignment.start, children: <
             Widget>[
           Container(
@@ -44,6 +49,8 @@ class _SignUpPageState extends State<SignUpPage> {
                     style: TextStyle(color: Colors.white),
                     controller: emailController,
                     decoration: InputDecoration(
+                      fillColor: Colors.grey, 
+                        filled: true,
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(30.0)),
                         borderSide:
@@ -68,6 +75,8 @@ class _SignUpPageState extends State<SignUpPage> {
                     style: TextStyle(color: Colors.white),
                     controller: passwordController,
                     decoration: InputDecoration(
+                      fillColor: Colors.grey, 
+                        filled: true,
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(30.0)),
                         borderSide:
@@ -91,6 +100,8 @@ class _SignUpPageState extends State<SignUpPage> {
                     style: TextStyle(color: Colors.white),
                     controller: rePasswordController,
                     decoration: InputDecoration(
+                      fillColor: Colors.grey, 
+                        filled: true,
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(30.0)),
                         borderSide:
@@ -172,7 +183,11 @@ class _SignUpPageState extends State<SignUpPage> {
                       )),
                 ],
               )),
-        ]));
+        ]))
+    ],)
+    
+    
+    ;
         
   }
 }
