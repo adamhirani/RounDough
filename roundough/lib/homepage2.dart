@@ -3,7 +3,9 @@ import 'package:roundough/accountPage.dart';
 import 'package:roundough/authentication_service.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
 import 'package:roundough/temp_delete.dart';
+
 
 import 'package:roundough/widgets.dart';
 
@@ -27,7 +29,7 @@ class HomePage2 extends StatelessWidget {
               ),
               onPressed: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => settings()));
+                    MaterialPageRoute(builder: (context) => Settings()));
               },
             )
           ],
