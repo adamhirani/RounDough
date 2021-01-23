@@ -49,7 +49,7 @@ class HomePage extends StatelessWidget {
                                   right: 10.0,
                                   bottom: 25),
                               child: Text(
-                                "\$22.37",
+                                "\$40.37",
                                 style: TextStyle(
                                   color: Colors.black,
                                   fontFamily: 'Montserrat',

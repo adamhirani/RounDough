@@ -2,8 +2,12 @@ import 'package:roundough/UIcolors.dart';
 import 'package:roundough/authentication_service.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
 import 'package:roundough/logoutPage.dart';
 import 'package:roundough/widgets.dart';
+
+import 'package:roundough/settings.dart';
+
 
 class HomePage2 extends StatelessWidget {
   @override
@@ -23,7 +27,7 @@ class HomePage2 extends StatelessWidget {
               ),
               onPressed: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => LogOutPage()));
+                    MaterialPageRoute(builder: (context) => settings()));
               },
             )
           ],
@@ -63,7 +67,7 @@ class HomePage2 extends StatelessWidget {
                                   right: 10.0,
                                   bottom: 25),
                               child: Text(
-                                "\$22.37",
+                                "\$40.37",
                                 style: TextStyle(
                                     color: UIColors.fontColor,
                                     fontFamily: 'Montserrat',
