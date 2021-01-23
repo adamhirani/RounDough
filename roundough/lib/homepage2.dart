@@ -1,11 +1,15 @@
 import 'package:roundough/UIcolors.dart';
+import 'package:roundough/accountPage.dart';
 import 'package:roundough/authentication_service.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
+import 'package:roundough/temp_delete.dart';
+
+
 import 'package:roundough/widgets.dart';
 
 import 'package:roundough/settings.dart';
-
 
 class HomePage2 extends StatelessWidget {
   @override
@@ -98,25 +102,38 @@ class HomePage2 extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: <Widget>[
-                            SizedBox(
-                              width: 20,
-                            ),
-                            McDonsWidget(),
-                            SizedBox(
-                              width: 20,
-                            ),
-                            Text(
-                              "McDonald's",
-                              style: TextStyle(
-                                  color: UIColors.fontColor,
-                                  fontFamily: 'Montserrat',
-                                  fontWeight: FontWeight.normal,
-                                  fontSize: 20),
-                            )
-                          ],
+                        GestureDetector(
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: <Widget>[
+                              SizedBox(
+                                width: 20,
+                              ),
+                              McDonsWidget(),
+                              SizedBox(
+                                width: 20,
+                              ),
+                              Text(
+                                "McDonald's",
+                                style: TextStyle(
+                                    color: UIColors.fontColor,
+                                    fontFamily: 'Montserrat',
+                                    fontWeight: FontWeight.normal,
+                                    fontSize: 20),
+                              ),
+                              SizedBox(
+                                width: 115,
+                              ),
+                              
+                              Icon(Icons.arrow_forward_ios_rounded)
+                            ],
+                          ),
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => TempScreen()));
+                          },
                         ),
                         Divider(
                           color: Colors.grey,
@@ -124,25 +141,37 @@ class HomePage2 extends StatelessWidget {
                           indent: 10,
                           endIndent: 10,
                         ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: <Widget>[
-                            SizedBox(
-                              width: 20,
-                            ),
-                            StarbucksWidget(),
-                            SizedBox(
-                              width: 20,
-                            ),
-                            Text(
-                              "Starbucks",
-                              style: TextStyle(
-                                  color: UIColors.fontColor,
-                                  fontFamily: 'Montserrat',
-                                  fontWeight: FontWeight.normal,
-                                  fontSize: 20),
-                            )
-                          ],
+                        GestureDetector(
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: <Widget>[
+                              SizedBox(
+                                width: 20,
+                              ),
+                              StarbucksWidget(),
+                              SizedBox(
+                                width: 20,
+                              ),
+                              Text(
+                                "Starbucks",
+                                style: TextStyle(
+                                    color: UIColors.fontColor,
+                                    fontFamily: 'Montserrat',
+                                    fontWeight: FontWeight.normal,
+                                    fontSize: 20),
+                              ),
+                              SizedBox(
+                                width: 130,
+                              ),
+                              Icon(Icons.arrow_forward_ios_rounded)
+                            ],
+                          ),
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => TempScreen()));
+                          },
                         ),
                         Divider(
                           color: Colors.grey,
@@ -150,26 +179,40 @@ class HomePage2 extends StatelessWidget {
                           indent: 10,
                           endIndent: 10,
                         ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: <Widget>[
-                            SizedBox(
-                              width: 20,
-                            ),
-                            DominosWidget(),
-                            SizedBox(
-                              width: 20,
-                            ),
-                            Text(
-                              "Domino's",
-                              style: TextStyle(
-                                  color: UIColors.fontColor,
-                                  fontFamily: 'Montserrat',
-                                  fontWeight: FontWeight.normal,
-                                  fontSize: 20),
-                            )
-                          ],
-                        ),
+                        GestureDetector(
+                          child: Row(
+                            //mainAxisAlignment: MainAxisAlignment.start,
+                            children: <Widget>[
+                              SizedBox(
+                                width: 20,
+                              ),
+                              DominosWidget(),
+                              SizedBox(
+                                width: 20,
+                              ),
+                              Text(
+                                "Domino's",
+                                style: TextStyle(
+                                    color: UIColors.fontColor,
+                                    fontFamily: 'Montserrat',
+                                    fontWeight: FontWeight.normal,
+                                    fontSize: 20),
+                              ),
+                              SizedBox(
+                                width: 135,
+                              ),
+                              Align(
+                                  alignment: Alignment.centerRight,
+                                  child: Icon(Icons.arrow_forward_ios_rounded))
+                            ],
+                          ),
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => TempScreen()));
+                          },
+                        )
                       ]))),
         ]));
   }
