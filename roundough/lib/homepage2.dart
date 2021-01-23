@@ -2,8 +2,6 @@ import 'package:roundough/UIcolors.dart';
 import 'package:roundough/authentication_service.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
-import 'package:roundough/logoutPage.dart';
 import 'package:roundough/widgets.dart';
 
 import 'package:roundough/settings.dart';
@@ -27,7 +25,7 @@ class HomePage2 extends StatelessWidget {
               ),
               onPressed: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => settings()));
+                    MaterialPageRoute(builder: (context) => Settings()));
               },
             )
           ],
