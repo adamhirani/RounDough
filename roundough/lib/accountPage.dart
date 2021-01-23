@@ -23,7 +23,7 @@ class AccountPage extends StatelessWidget {
               ),
               onPressed: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => settings()));
+                    MaterialPageRoute(builder: (context) => Settings()));
               },
             )
           ],
