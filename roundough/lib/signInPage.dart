@@ -30,7 +30,10 @@ class _SignInPageState extends State<SignInPage> {
               Widget>[
             Container(
               padding: EdgeInsets.only(top: 35.0, left: 20.0, right: 20.0),
-              child: new MainLogoWidget(),
+              child: Card(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20.0)),
+                  child: new MainLogoWidget()),
             ),
             Container(
               padding: EdgeInsets.only(left: 25.0, right: 20.0),
@@ -47,11 +50,10 @@ class _SignInPageState extends State<SignInPage> {
                 child: Column(
                   children: <Widget>[
                     TextField(
-                      
                       style: TextStyle(color: Colors.white),
                       controller: emailController,
                       decoration: InputDecoration(
-                        fillColor: Colors.grey, 
+                        fillColor: Colors.grey,
                         filled: true,
                         enabledBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.all(Radius.circular(30.0)),
@@ -77,7 +79,7 @@ class _SignInPageState extends State<SignInPage> {
                       style: TextStyle(color: Colors.white),
                       controller: passwordController,
                       decoration: InputDecoration(
-                        fillColor: Colors.grey, 
+                        fillColor: Colors.grey,
                         filled: true,
                         enabledBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.all(Radius.circular(30.0)),
@@ -139,7 +141,6 @@ class _SignInPageState extends State<SignInPage> {
                       color: Colors.transparent,
                       child: Container(
                         decoration: BoxDecoration(
-                            
                             color: UIColors.whiteish,
                             borderRadius: BorderRadius.circular(20.0)),
                         child: InkWell(

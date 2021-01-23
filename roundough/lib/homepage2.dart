@@ -141,7 +141,7 @@ class HomePage2 extends StatelessWidget {
                           },
                         ),
                         Divider(
-                          color: Colors.grey,
+                          color: UIColors.lightGrey,
                           thickness: 1,
                           indent: 10,
                           endIndent: 10,
@@ -179,7 +179,7 @@ class HomePage2 extends StatelessWidget {
                           },
                         ),
                         Divider(
-                          color: Colors.grey,
+                          color: UIColors.lightGrey,
                           thickness: 1,
                           indent: 10,
                           endIndent: 10,
