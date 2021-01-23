@@ -2,6 +2,7 @@ import 'package:roundough/UIcolors.dart';
 import 'package:roundough/authentication_service.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:roundough/history.dart';
 import 'package:roundough/settings.dart';
 
 class AccountPage extends StatelessWidget {
@@ -299,7 +300,18 @@ class AccountPage extends StatelessWidget {
                                 ),
                               )),
                         ])))),
-          )
+          ),
+
+          Container(
+            padding: EdgeInsets.only(top: 45.0),
+            child: RaisedButton(
+            onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => History()));
+            },
+            child: Text("Transaction History"),
+          ),)
+          
         ]));
   }
 }
