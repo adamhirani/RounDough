@@ -4,6 +4,7 @@ import 'package:roundough/UIcolors.dart';
 import 'package:roundough/signInPage.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:roundough/widgets.dart';
 
 class VerifyScreen extends StatefulWidget {
   @override
@@ -34,9 +35,15 @@ class _VerifyScreenState extends State<VerifyScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return new
+
+    Stack(children: <Widget>[
+      Container(
+        child: LoginBackgroundWidget(),
+      ),
+Scaffold(
       resizeToAvoidBottomPadding: false,
-      backgroundColor: UIColors.primaryColor,
+      backgroundColor: Colors.transparent,
       body: Center(
           child: Container(
               height: 400,
@@ -73,7 +80,10 @@ class _VerifyScreenState extends State<VerifyScreen> {
                               ),
                             )),
                       ]))))),
-    );
+    )
+    ],)
+    
+    ;
   }
 
   Future<void> checkEmailVerified() async {
