@@ -3,8 +3,10 @@ import 'package:roundough/accountPage.dart';
 import 'package:roundough/authentication_service.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:roundough/dontClick.dart';
+import 'package:roundough/history.dart';
 
-import 'package:roundough/logoutPage.dart';
+import 'package:roundough/settings.dart';
 import 'package:roundough/widgets.dart';
 
 import 'package:roundough/settings.dart';
@@ -77,6 +79,13 @@ class HomePage2 extends StatelessWidget {
                               )),
                         ])))),
           ),
+          RaisedButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => History()));
+              },
+              child: Text("Transaction History"),
+            ),
           Container(
             alignment: Alignment.centerLeft,
             padding: EdgeInsets.only(left: 20.0, top: 10),
