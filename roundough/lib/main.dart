@@ -1,5 +1,6 @@
 import 'package:roundough/authentication_service.dart';
 import 'package:roundough/homepage.dart';
+import 'package:roundough/homepage2.dart';
 import 'package:roundough/signInPage.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -46,7 +47,7 @@ class AuthenticationWrapper extends StatelessWidget {
     final firebaseUser = context.watch<User>();
 
     if ((firebaseUser != null) && firebaseUser.emailVerified == true) {
-      return HomePage();
+      return HomePage2();
     }
     return SignInPage();
   }

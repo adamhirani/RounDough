@@ -35,55 +35,56 @@ class _VerifyScreenState extends State<VerifyScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return new
-
-    Stack(children: <Widget>[
-      Container(
-        child: LoginBackgroundWidget(),
-      ),
-Scaffold(
-      resizeToAvoidBottomPadding: false,
-      backgroundColor: Colors.transparent,
-      body: Center(
-          child: Container(
-              height: 400,
-              width: 380,
-              child: Card(
-                  color: UIColors.whiteish,
-                  elevation: 30,
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(20.0)),
-                  child: Center(
-                      child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[
-                        Container(
-                            padding: EdgeInsets.only(top: 120.0),
-                            child: Text(
-                              "Email Sent.",
-                              style: TextStyle(
-                                color: Colors.black,
-                                fontFamily: 'Montserrat',
-                                fontWeight: FontWeight.bold,
-                                fontSize: 60,
-                              ),
-                            )),
-                        Container(
-                            padding: EdgeInsets.only(
-                                top: 25.0, left: 20.0, right: 10.0, bottom: 25),
-                            child: Text(
-                              "An email was sent to ${user.email}",
-                              style: TextStyle(
-                                color: Colors.black,
-                                fontFamily: 'Montserrat',
-                                fontWeight: FontWeight.normal,
-                              ),
-                            )),
-                      ]))))),
-    )
-    ],)
-    
-    ;
+    return new Stack(
+      children: <Widget>[
+        Container(
+          child: LoginBackgroundWidget(),
+        ),
+        Scaffold(
+          resizeToAvoidBottomPadding: false,
+          backgroundColor: Colors.transparent,
+          body: Center(
+              child: Container(
+                  height: 400,
+                  width: 380,
+                  child: Card(
+                      color: UIColors.whiteish,
+                      elevation: 30,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0)),
+                      child: Center(
+                          child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: <Widget>[
+                            Container(
+                                padding: EdgeInsets.only(top: 120.0),
+                                child: Text(
+                                  "Email Sent.",
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontFamily: 'Montserrat',
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 60,
+                                  ),
+                                )),
+                            Container(
+                                padding: EdgeInsets.only(
+                                    top: 25.0,
+                                    left: 20.0,
+                                    right: 10.0,
+                                    bottom: 25),
+                                child: Text(
+                                  "An email was sent to ${user.email}",
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontFamily: 'Montserrat',
+                                    fontWeight: FontWeight.normal,
+                                  ),
+                                )),
+                          ]))))),
+        )
+      ],
+    );
   }
 
   Future<void> checkEmailVerified() async {
