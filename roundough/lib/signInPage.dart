@@ -37,7 +37,7 @@ class _SignInPageState extends State<SignInPage> {
               child: Text(
                 'Log In to Roundough',
                 style: TextStyle(
-                    color: UIColors.whiteish,
+                    color: Colors.black,
                     fontWeight: FontWeight.bold,
                     fontFamily: 'Montserrat'),
               ),
@@ -101,9 +101,10 @@ class _SignInPageState extends State<SignInPage> {
                         padding: EdgeInsets.only(
                             top: 25.0, left: 20.0, right: 20.0, bottom: 25),
                         child: Text(
-                          'error',
+                          //TODO: FOR ERROR TEXT
+                          'Trouble logging in?',
                           style: TextStyle(
-                            color: UIColors.errorRed,
+                            color: Colors.black,
                             fontFamily: 'Montserrat',
                             fontWeight: FontWeight.bold,
                           ),
@@ -138,11 +139,8 @@ class _SignInPageState extends State<SignInPage> {
                       color: Colors.transparent,
                       child: Container(
                         decoration: BoxDecoration(
-                            border: Border.all(
-                                color: Colors.black,
-                                style: BorderStyle.solid,
-                                width: 1.0),
-                            color: Colors.transparent,
+                            
+                            color: UIColors.whiteish,
                             borderRadius: BorderRadius.circular(20.0)),
                         child: InkWell(
                           onTap: () {

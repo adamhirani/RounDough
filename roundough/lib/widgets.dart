@@ -18,3 +18,42 @@ class LoginBackgroundWidget extends StatelessWidget {
   }
 }
 
+class McDonsWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    var assetsImage = new AssetImage('assets/mcdons.png');
+    var image = new Image(image: assetsImage, width: 50.0, height: 50.0);
+    return (Container(
+        child: ClipRRect(
+      borderRadius: BorderRadius.circular(50.0),
+      child: image,
+    )));
+
+  }
+}
+class StarbucksWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    var assetsImage = new AssetImage('assets/starbucks.png');
+    var image = new Image(image: assetsImage, width: 50.0, height: 50.0);
+    return (Container(
+        child: ClipRRect(
+      borderRadius: BorderRadius.circular(50.0),
+      child: image,
+    )));
+
+  }
+}
+class DominosWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    var assetsImage = new AssetImage('assets/dominos.png');
+    var image = new Image(image: assetsImage, width: 50.0, height: 50.0);
+    return (Container(
+        child: ClipRRect(
+      borderRadius: BorderRadius.circular(50.0),
+      child: image,
+    )));
+
+  }
+}
