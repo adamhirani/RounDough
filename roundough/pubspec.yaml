@@ -30,10 +30,10 @@ dependencies:
   cloud_firestore: ^0.14.4
 
   # Analytics
-  firebase_analytics: "6.3.0"
+  #firebase_analytics: "6.3.0"
 
   # Crashlytics
-  firebase_crashlytics: "0.2.4"
+  #firebase_crashlytics: "0.2.4"
 
   # Performance
   firebase_performance: "0.4.3"
