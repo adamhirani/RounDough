@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "753549881186",
+    "project_id": "roundough-fb4ac",
+    "storage_bucket": "roundough-fb4ac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:753549881186:android:e7e2e4a039dc2cce3cc63b",
+        "android_client_info": {
+          "package_name": "com.example.roundough"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "753549881186-tfs1oi4kir4lbpgpq7mlabh5hla2nv64.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-AI_4bM0C6K3Os_8Uby6Jh6jyBhsDZ3w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "753549881186-tfs1oi4kir4lbpgpq7mlabh5hla2nv64.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "753549881186-jes1umjhste1n4vi3tkgqu1lcigk44h5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.roundough"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
