@@ -22,8 +22,14 @@ class _SignInPageState extends State<SignInPage> {
     return new Scaffold(
         resizeToAvoidBottomPadding: false,
         backgroundColor: UIColors.primaryColor,
-        body: Column(crossAxisAlignment: CrossAxisAlignment.start, children: <
+        
+        body: 
+        
+
+        Column(crossAxisAlignment: CrossAxisAlignment.start, children: <
             Widget>[
+
+              
           Container(
             padding: EdgeInsets.only(top: 35.0, left: 20.0, right: 20.0),
             child: new MainLogoWidget(),
