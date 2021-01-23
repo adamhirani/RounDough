@@ -30,10 +30,10 @@ dependencies:
   cloud_firestore: ^0.14.4
 
   # Analytics
-  firebase_analytics: "6.3.0"
+  #firebase_analytics: "6.3.0"
 
   # Crashlytics
-  firebase_crashlytics: "0.2.4"
+  #firebase_crashlytics: "0.2.4"
 
   # Performance
   firebase_performance: "0.4.3"
@@ -74,6 +74,9 @@ flutter:
   assets:
     - assets/main_logo.png
     - assets/login_background.png
+    - assets/mcdons.png
+    - assets/dominos.png
+    - assets/starbucks.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
