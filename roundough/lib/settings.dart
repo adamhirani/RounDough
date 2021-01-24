@@ -1,11 +1,13 @@
+import 'package:roundough/accountPage.dart';
 import 'package:roundough/authentication_service.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:roundough/signInPage.dart';
 import 'package:roundough/UIcolors.dart';
+import 'package:roundough/restaurants.dart';
 
 // ignore: camel_case_types
-class settings extends StatelessWidget {
+class Settings extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,6 +30,12 @@ class settings extends StatelessWidget {
                   padding: EdgeInsets.only(top: 50.0),
                   width: 400,
                   height: 125,
+                  child: Stack(children: [
+                  GestureDetector(
+                      onTap: () {
+                        Navigator.push(context,
+                                MaterialPageRoute(builder: (context) => Restaurants()));
+                        },
                   child: Card(
                       color: UIColors.whiteish,
                       elevation: 20,
@@ -41,7 +49,7 @@ class settings extends StatelessWidget {
                             Container(
                                 padding: EdgeInsets.only(top: 20),
                                 child: Text(
-                                  "Restuarants",
+                                  "Restaurants",
                                   style: TextStyle(
                                     color: UIColors.fontColor,
                                     fontFamily: 'Montserrat',
@@ -49,7 +57,7 @@ class settings extends StatelessWidget {
                                     fontSize: 25,
                                   ),
                                 )),
-                          ])))),
+                          ])))),])),
             ),
             Center(
               child: Container(
@@ -57,6 +65,12 @@ class settings extends StatelessWidget {
                   padding: EdgeInsets.only(top: 20.0),
                   width: 400,
                   height: 95,
+                  child: Stack(children: [
+                  GestureDetector(
+                      onTap: () {
+                        Navigator.push(context,
+                                MaterialPageRoute(builder: (context) => AccountPage()));
+                        },
                   child: Card(
                       color: UIColors.whiteish,
                       elevation: 20,
@@ -78,7 +92,7 @@ class settings extends StatelessWidget {
                                     fontSize: 25,
                                   ),
                                 )),
-                          ])))),
+                          ])))),]))
             ),
             Center(
               child: Container(
