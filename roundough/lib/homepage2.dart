@@ -26,7 +26,7 @@ class HomePage2 extends StatelessWidget {
     return new Scaffold(
         appBar: AppBar(
           title: Text(
-            "Roundough",
+            "RounDough",
             style: TextStyle(color: UIColors.fontColor),
           ),
           backgroundColor: UIColors.primaryColor,
@@ -142,7 +142,7 @@ class HomePage2 extends StatelessWidget {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => TempScreen()));
+                                    builder: (context) => McdonaldsRedeem()));
                           },
                         ),
                         Divider(
