@@ -2,10 +2,8 @@ import 'package:roundough/UIcolors.dart';
 import 'package:roundough/authentication_service.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
-import 'package:roundough/logoutPage.dart';
 import 'package:roundough/widgets.dart';
-
+import 'package:roundough/mcdonaldsRedeem.dart';
 import 'package:roundough/settings.dart';
 
 
@@ -76,6 +74,7 @@ class HomePage2 extends StatelessWidget {
                               )),
                         ])))),
           ),
+
           Container(
             alignment: Alignment.centerLeft,
             padding: EdgeInsets.only(left: 20.0, top: 10),

@@ -36,7 +36,7 @@ dependencies:
   #firebase_crashlytics: "0.2.4"
 
   # Performance
-  firebase_performance: "0.4.3"
+  #firebase_performance: "0.4.3"
 
   provider: ^4.3.2+1
 
@@ -77,6 +77,7 @@ flutter:
     - assets/mcdons.png
     - assets/dominos.png
     - assets/starbucks.png
+    - assets/dons.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
