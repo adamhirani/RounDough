@@ -31,6 +31,19 @@ class McDonsWidget extends StatelessWidget {
 
   }
 }
+class McDonsCardWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    var assetsImage = new AssetImage('assets/dons.jpg');
+    var image = new Image(image: assetsImage, width: 50.0, height: 50.0);
+    return (Container(
+        child: ClipRRect(
+      borderRadius: BorderRadius.circular(50.0),
+      child: image,
+    )));
+
+  }
+}
 class StarbucksWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
